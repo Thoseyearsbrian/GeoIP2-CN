@@ -1,19 +1,35 @@
 #!/usr/bin/env python3
 """
 下载并提取 MaxMind 的 GeoLite2-Country.mmdb 数据库
+
 - 自动读取 MAXMIND_ACCOUNT_ID 和 MAXMIND_LICENSE_KEY 环境变量
+- 支持本地使用 .env 文件（用于本地开发）
 - 从 MaxMind 官方地址下载 tar.gz 压缩包
 - 解压出 .mmdb 文件，保存到 ./data 目录
-- 用于 GitHub Actions 或本地定期更新
 """
 
 import os
 import requests
 import tarfile
 
-# 读取 MaxMind 账号与 License Key（通过 GitHub Secrets 设置）
+# 支持本地开发使用 .env 文件（GitHub Actions 无需此步骤）
+try:
+    from dotenv import load_dotenv
+    from pathlib import Path
+
+    # 显式加载项目根目录的 .env 文件
+    env_path = Path(__file__).resolve().parent.parent / '.env'
+    load_dotenv(dotenv_path=env_path)
+except ImportError:
+    pass
+
+# 读取 MaxMind 账号与 License Key（优先使用环境变量或 .env 文件）
 account_id = os.getenv("MAXMIND_ACCOUNT_ID")
 license_key = os.getenv("MAXMIND_LICENSE_KEY")
+# print(f"DEBUG: license_key = {license_key}")
+
+if not license_key:
+    raise SystemExit("未找到 MAXMIND_LICENSE_KEY，请设置环境变量或配置 .env 文件")
 
 # 下载地址（使用官方格式）
 url = f"https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key={license_key}&suffix=tar.gz"
@@ -48,7 +64,7 @@ try:
     with tarfile.open(tar_path, "r:gz") as tar:
         for member in tar.getmembers():
             if member.name.endswith(".mmdb"):
-                member.name = os.path.basename(member.name)
+                member.name = os.path.basename(member.name)  # 避免解压到多层目录
                 tar.extract(member, output_dir)
     print(f".mmdb 文件已解压至：{output_dir}/")
 except Exception as e:

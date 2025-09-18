@@ -27,7 +27,7 @@
 
 | 文件名称     |                  构建后文件路径（仅供参考）                  | 示例用途                                                     |
 | ------------ | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| Country.mmdb | [`data/Country.mmdb`](https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/data/Country.mmdb) | Surge、Clash、QuantumultX 等支持 GeoIP 的工具作为 CN 区域判断依据 |
+| Country.mmdb | [`data/Country.mmdb`](https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/data/GeoLite2-Country.mmdb) | Surge、Clash、QuantumultX 等支持 GeoIP 的工具作为 CN 区域判断依据 |
 
 ## 配置方式
 

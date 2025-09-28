@@ -5,6 +5,9 @@ on:
     - cron: '0 0 */3 * *'  # 每 3 天执行一次（UTC 0 点）
   workflow_dispatch:       # 支持手动触发
 
+permissions:
+  contents: write
+
 jobs:
   update_mmdb:
     runs-on: ubuntu-latest

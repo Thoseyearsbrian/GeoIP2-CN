@@ -21,6 +21,10 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: Install required packages
+        run: |
+          pip install requests
+
       - name: Run update_mmdb.py
         env:
           MAXMIND_ACCOUNT_ID: ${{ secrets.MAXMIND_ACCOUNT_ID }}

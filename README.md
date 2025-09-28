@@ -1,5 +1,7 @@
 # GeoIP2-CN 自动构建与更新方案
 
+![GeoIP Auto Update](https://github.com/Thoseyearsbrian/GeoIP2-CN/actions/workflows/update.yml/badge.svg)
+
 本项目提供自动下载与构建 MaxMind 官方 GeoLite2-Country.mmdb 数据库的脚本与配置，旨在为 Surge、Clash 、QuantumultX等网络工具提供可信、自控、定期更新的地理定位支持。
 
 ## 项目背景

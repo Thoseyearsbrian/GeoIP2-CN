@@ -31,22 +31,7 @@
 
 ## 配置方式
 
-请参考项目 [Wiki](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Surge) 提供的文档教程，在各个工具中自定义 GeoIP2 数据库。
-
-目前 Wiki 中已经添加了如下工具的配置教程，欢迎大家在 Issues 中补充：
-
-* [Surge](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Surge)
-  * Surge 配置文件修改
-  * Surge for iOS 图形化配置
-  * Surge for macOS 图形化配置
-* [Quantumult X](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Quantumult-X)
-* [Shadowrocket](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Shadowrocket)
-* [Clash](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Clash)
-  * ClashX / ClashX Pro (macOS)
-  * Clash for Windows
-  * OpenClash (OpenWRT)
-  * Clash for Android
-  * Stash (iOS)
+复制文件路径 -> 打开 Surge -> 打开 通用 -> GeoIp数据库 -> 删除历史配置（如有） -> 粘贴链接 -> 现在更新 -> 应用 -> 完成!
 
 ## ⚠️ 注意事项
 1. **禁用或删除** 与 **中国大陆 IP 地址段** 相关的规则或规则集

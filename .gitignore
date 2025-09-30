@@ -9,4 +9,5 @@ __pycache__/
 *.pyc
 
 # （可选）忽略解压后的数据库文件
-# data/*.mmdb
+# data/*.mmdb.DS_Store
+.DS_Store

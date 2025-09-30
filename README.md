@@ -41,6 +41,10 @@
 
 复制文件路径 -> 打开 Surge -> 打开 通用 -> GeoIp数据库 -> 删除历史配置（如有） -> 粘贴链接 -> 现在更新 -> 应用 -> 完成!
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Thoseyearsbrian/Aegis/main/GeoIP2-CN/Icons/Groups/surge-geoip-config-guide-step-by-step.png" width="600">
+</p>
+
 ## ⚠️ 注意事项
 1. **禁用或删除** 与 **中国大陆 IP 地址段** 相关的规则或规则集
    

@@ -1,5 +1,13 @@
 # **GeoIP2-CN: Auto Build and Update Solution**
 
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
+  <img src="https://github.com/Thoseyearsbrian/GeoIP2-CN/actions/workflows/update.yml/badge.svg" alt="GeoIP Auto Update Status" />
+  <img src="https://img.shields.io/github/stars/Thoseyearsbrian/GeoIP2-CN?style=social" alt="GitHub stars" />
+  <img src="https://img.shields.io/github/v/release/Thoseyearsbrian/GeoIP2-CN?include_prereleases&label=version" alt="Version" />
+  <img src="https://img.shields.io/github/last-commit/Thoseyearsbrian/GeoIP2-CN" alt="Last Commit" />
+</p>
+
 This project provides scripts and configurations to automatically download and build the official GeoLite2-Country.mmdb database from MaxMind. It is designed to offer trusted, self-hosted, and regularly updated geolocation support for network tools such as Surge, Clash, and QuantumultX.
 
 ## **Project Background**
@@ -31,22 +39,11 @@ This project utilizes GitHub Actions for scheduled updates, pulling the latest d
 
 ## **Configuration Guide**
 
-Please refer to the project [Wiki](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Surge) for documentation on configuring each supported tool.
+Copy the file URL → Open Surge → Go to General → GeoIP Database → Remove previous configuration (if any) → Paste the new URL → Update Now → Apply → Done!
 
-Available configuration guides:
-
-- [Surge](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Surge)
-  - Manual config editing
-  - GUI setup for Surge iOS
-  - GUI setup for Surge macOS
-- [Quantumult X](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Quantumult-X)
-- [Shadowrocket](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Shadowrocket)
-- [Clash](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Clash)
-  - ClashX / ClashX Pro (macOS)
-  - Clash for Windows
-  - OpenClash (OpenWRT)
-  - Clash for Android
-  - Stash (iOS)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/Icons/Groups/surge-geoip-config-guide-step-by-step.png" width="600">
+</p>
 
 ## **⚠️ Important Notes**
 

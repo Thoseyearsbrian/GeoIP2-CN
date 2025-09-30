@@ -1,4 +1,12 @@
-# GeoIP2-CN 自动构建与更新方案
+<h1 align="center">GeoIP2-CN 自动构建与更新方案</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
+  <img src="https://github.com/Thoseyearsbrian/GeoIP2-CN/actions/workflows/update.yml/badge.svg" alt="GeoIP Auto Update Status" />
+  <img src="https://img.shields.io/github/stars/Thoseyearsbrian/GeoIP2-CN?style=social" alt="GitHub stars" />
+  <img src="https://img.shields.io/github/v/release/Thoseyearsbrian/GeoIP2-CN?include_prereleases&label=version" alt="Version" />
+  <img src="https://img.shields.io/github/last-commit/Thoseyearsbrian/GeoIP2-CN" alt="Last Commit" />
+</p>
 
 本项目提供自动下载与构建 MaxMind 官方 GeoLite2-Country.mmdb 数据库的脚本与配置，旨在为 Surge、Clash 、QuantumultX等网络工具提供可信、自控、定期更新的地理定位支持。
 
@@ -27,26 +35,15 @@
 
 | 文件名称     |                  构建后文件路径（仅供参考）                  | 示例用途                                                     |
 | ------------ | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| Country.mmdb | [`data/Country.mmdb`](https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/data/Country.mmdb) | Surge、Clash、QuantumultX 等支持 GeoIP 的工具作为 CN 区域判断依据 |
+| Country.mmdb | [`data/Country.mmdb`](https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/data/GeoLite2-Country.mmdb) | Surge、Clash、QuantumultX 等支持 GeoIP 的工具作为 CN 区域判断依据 |
 
 ## 配置方式
 
-请参考项目 [Wiki](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Surge) 提供的文档教程，在各个工具中自定义 GeoIP2 数据库。
+复制文件路径 -> 打开 Surge -> 打开 通用 -> GeoIp数据库 -> 删除历史配置（如有） -> 粘贴链接 -> 现在更新 -> 应用 -> 完成!
 
-目前 Wiki 中已经添加了如下工具的配置教程，欢迎大家在 Issues 中补充：
-
-* [Surge](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Surge)
-  * Surge 配置文件修改
-  * Surge for iOS 图形化配置
-  * Surge for macOS 图形化配置
-* [Quantumult X](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Quantumult-X)
-* [Shadowrocket](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Shadowrocket)
-* [Clash](https://github.com/Thoseyearsbrian/GeoIP2-CN/wiki/Clash)
-  * ClashX / ClashX Pro (macOS)
-  * Clash for Windows
-  * OpenClash (OpenWRT)
-  * Clash for Android
-  * Stash (iOS)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/Icons/Groups/surge-geoip-config-guide-step-by-step.png" width="600">
+</p>
 
 ## ⚠️ 注意事项
 1. **禁用或删除** 与 **中国大陆 IP 地址段** 相关的规则或规则集
@@ -89,3 +86,4 @@
 - 本项目使用 GitHub Actions 自动拉取 MaxMind 官方数据。**使用本项目前，用户需前往 MaxMind 官网注册并获取属于自己的 License Key**，以便合规运行脚本或自动更新流程；
 - GeoLite2 数据版权归 [MaxMind, Inc.](https://www.maxmind.com/) 所有，遵循其 [GeoLite2 数据库许可协议](https://www.maxmind.com/en/geolite2/eula)；
 - 本项目中所含脚本和配置文件遵循 [MIT License](https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/LICENSE)。
+- 此外，Aegis 项目已启用 GPG 签名（Git Commit Signing）机制，以确保项目代码来源真实可信、未被篡改。你可通过 GPG 签名验证每一次提交操作的完整性，从而获得更高的安全保障。

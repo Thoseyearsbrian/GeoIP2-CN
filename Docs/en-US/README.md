@@ -8,6 +8,10 @@
   <img src="https://img.shields.io/github/last-commit/Thoseyearsbrian/GeoIP2-CN" alt="Last Commit" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/Thoseyearsbrian/GeoIP2-CN/blob/main/GeoIP2-CN/Docs/zh-CN/README.md"><b>【中文文档点此进入】</b></a>
+</p>
+
 This project provides scripts and configurations to automatically download and build the official GeoLite2-Country.mmdb database from MaxMind. It is designed to offer trusted, self-hosted, and regularly updated geolocation support for network tools such as Surge, Clash, and QuantumultX.
 
 ## **Project Background**
@@ -42,7 +46,7 @@ This project utilizes GitHub Actions for scheduled updates, pulling the latest d
 Copy the file URL → Open Surge → Go to General → GeoIP Database → Remove previous configuration (if any) → Paste the new URL → Update Now → Apply → Done!
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/Icons/Groups/surge-geoip-config-guide-step-by-step.png" width="600">
+  <img src="https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/Icons/Groups/surge-geoip-config-guide-step-by-step-en.png" width="600">
 </p>
 
 ## **⚠️ Important Notes**

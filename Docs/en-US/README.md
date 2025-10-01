@@ -35,7 +35,7 @@ This project utilizes GitHub Actions for scheduled updates, pulling the latest d
 
 | **Filename** | **Build Output Path (for reference only)**                   | **Example Usage**                                        |
 | ------------ | ------------------------------------------------------------ | -------------------------------------------------------- |
-| Country.mmdb | [data/Country.mmdb](https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/data/Country.mmdb) | Used in Surge, Clash, QuantumultX for identifying CN IPs |
+| Country.mmdb | [data/Country.mmdb](https://raw.githubusercontent.com/Thoseyearsbrian/GeoIP2-CN/main/data/GeoLite2-Country.mmdb) | Used in Surge, Clash, QuantumultX for identifying CN IPs |
 
 ## **Configuration Guide**
 

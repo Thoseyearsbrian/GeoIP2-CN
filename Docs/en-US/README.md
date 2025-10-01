@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Thoseyearsbrian/GeoIP2-CN/blob/main/GeoIP2-CN/Docs/zh-CN/README.md"><b>【中文文档点此进入】</b></a>
+  <a href="https://github.com/Thoseyearsbrian/GeoIP2-CN/blob/main/Docs/zh-CN/README.md"><b>【中文文档点此进入】</b></a>
 </p>
 
 This project provides scripts and configurations to automatically download and build the official GeoLite2-Country.mmdb database from MaxMind. It is designed to offer trusted, self-hosted, and regularly updated geolocation support for network tools such as Surge, Clash, and QuantumultX.
